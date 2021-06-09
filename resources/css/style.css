@@ -34,7 +34,10 @@ html {
 
 p {
     font-family: 'Space Mono', monospace;
-    color: red;
+    background: linear-gradient(to right, #B62203, #D73502, #FC6400, #FF7500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #demo {
@@ -146,9 +149,15 @@ animation: fire 2s infinite alternate;
     align-content: center;
     justify-content: center;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     text-decoration: none;
     font-size: 1.5rem;
-    color: purple;
-    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 10px #3cf7fd);
 }
+
+#link:hover {
+    font-size: 2rem;
+    color: rgb(45, 84, 156);
+}
+
