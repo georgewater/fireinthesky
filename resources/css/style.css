@@ -6,27 +6,35 @@
     font-family: 'VT323', monospace;
 }
 
+html {
+    height: 100%;
+}
+
 #name {
     font-family: 'VT323', monospace;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 10vh;
-    background: #0E0D4D;
-    border-bottom: black 2px;
-    color: white;
+    color: red;
 }
 
 p {
     font-family: 'Space Mono', monospace;
 }
 
-main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#demo {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-attachment: fixed;
     background: linear-gradient(to top,
     #990a17,
     #E12926,
@@ -37,7 +45,16 @@ main {
     );
 }
 
+.content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .title {
+    font-size: 2rem;
+    font-weight: bold;
     animation: color-change 3s infinite;
     -webkit-animation: color-change 3s infinite;
     -moz-animation: color-change 3s infinite;
